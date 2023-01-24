@@ -1,0 +1,177 @@
+header {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: end;
+    height: 90px;
+    margin: 0 auto;
+}
+
+.div_Titulo{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    transition: 0.8s;
+}
+
+.div_Titulo:hover{
+    transform: translateY(-5px) translateX(5px);
+}
+
+.h1_Titulo {
+    color: black;
+    font-size: 200%;
+}
+
+.a_Titulo {
+    color: black;
+}
+
+a:link {
+    outline: none;
+}
+
+.div_Hover{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    transition: 0.8s;
+    cursor: pointer;
+    
+}
+
+.div_Hover:hover{
+    transform: translateY(-5px) translateX(5px);
+}
+
+.fa_Sun {
+    font-size: 210%;
+    transition: 2s;
+    color: red;
+    animation: rotateSun 2s linear infinite;
+}
+
+@keyframes rotateSun {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.fa_Sun:hover{
+    transform: rotate(360deg);
+}
+
+.fa_Moon {
+    font-size: 210%;
+    transition: 0.5s;
+    color: aqua;
+    animation: rotateMoon 2s linear;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.fa_Moon:hover{
+    transform: rotate(40deg);
+}
+
+
+.div_ContButtonDark {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    transition: 0.8s;
+    justify-content: center;
+}
+
+.div_ButtonDark {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    transition: 0.8s;
+}
+
+#change {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 34px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+#change input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.div_Line {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    top: 50%;
+    border-radius: 5%;
+}
+
+#div_Circle {
+    width: 27px;
+    height: 27px;
+    background: black;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    transition: 0.8s;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .div_Titulo{
+        width: 55%;
+    }
+
+    .h1_Titulo {
+        color: black;
+        font-size: 110%;
+    }
+
+    .div_ContButtonDark {
+        width: 50%;
+        height: 13px;
+    }
+
+    .div_Hover{
+        height: 30px;
+    }
+
+    .fa_Sun {
+        font-size: 150%;
+    }
+
+    .fa_Moon {
+        font-size: 150%;
+    }
+
+    .div_Line {
+        position: absolute;
+        width: 80%;
+        height: 2px;
+        background-color: black;
+        top: 35%;
+        border-radius: 5%;
+    }
+    
+    #div_Circle {
+        width: 12px;
+        height: 12px;
+        background: black;
+        border-radius: 50%;
+        position: relative;
+        top: 7px;
+        transition: 0.8s;
+    }
+}

@@ -1,0 +1,79 @@
+.div_Fullcalendar {
+    width: 58% !important;
+    height: 58%;
+    background: aliceblue;
+    box-shadow:
+        3.1px 2.1px 4.7px rgba(0, 0, 0, 0.053),
+        7.4px 5px 11.4px rgba(0, 0, 0, 0.077),
+        13.9px 9.4px 21.4px rgba(0, 0, 0, 0.095),
+        24.8px 16.8px 38.2px rgba(0, 0, 0, 0.113),
+        46.4px 31.3px 71.4px rgba(0, 0, 0, 0.137),
+        111px 75px 171px rgba(0, 0, 0, 0.19);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    border-radius: 10px;
+    transition: 0.8s;
+
+    position: absolute;
+    left: 22%;
+    top: 20%;
+}
+
+.div_Fullcalendar:hover {
+    transform: translateY(-5px) translateX(5px);
+}
+
+.fc {
+    height: 500px;
+    width: 80%;
+}
+
+.fc-view-harness{
+    background: aliceblue;
+}
+
+.fc button{
+    font-size: 18px;
+    padding: 8px 12px;
+}
+
+.fc-button {
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+
+@media (max-width: 600px) {
+    .div_Fullcalendar {
+        width: 80% !important;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    
+        border-radius: 10px;
+        transition: 0.8s;
+    
+        position: absolute;
+        left: 10%;
+        top: 26%;
+    }
+
+    .fc {
+        height: 420px;
+        width: 80%;
+    }
+
+    .fc-toolbar-chunk{
+        width: 100%;
+    }
+
+    .fc-dom-1{
+        width: 80%;
+    }
+
+
+}

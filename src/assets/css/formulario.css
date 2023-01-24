@@ -1,0 +1,204 @@
+.div_Formulario{
+    width: 50% !important;
+    height: 50%;
+    background: aliceblue;
+    box-shadow:
+        3.1px 2.1px 4.7px rgba(0, 0, 0, 0.053),
+        7.4px 5px 11.4px rgba(0, 0, 0, 0.077),
+        13.9px 9.4px 21.4px rgba(0, 0, 0, 0.095),
+        24.8px 16.8px 38.2px rgba(0, 0, 0, 0.113),
+        46.4px 31.3px 71.4px rgba(0, 0, 0, 0.137),
+        111px 75px 171px rgba(0, 0, 0, 0.19);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    transition: 0.8s;
+
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+
+.div_Formulario:hover{
+    transform: translateY(-5px) translateX(5px);
+}
+
+.div_Form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form_Datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.div_Inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.div_LabelInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    transition: 0.8s;
+}
+
+.input_Control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+    border-style: solid;
+    height: 35px;
+    border-color: black;
+    background-color: aliceblue;
+}
+
+.datepicker {
+    width: 93.7%;
+}
+
+.input_Control::placeholder{
+    color: white;
+}
+
+#start::placeholder{
+    color: black !important;
+}
+
+.draw-border {
+    box-shadow: outset 0 0 0 4px black;
+    color: black;
+    transition: color 0.8s 0.0833333333s;
+    position: relative;
+}
+
+input{
+    outline: none;
+}
+
+.fa-clock{
+    font-size: 101%;
+    color: darkcyan ;
+}
+
+input.draw-border:hover {
+    border-color: cyan;
+    transition: border-color 0.8s;
+}
+
+input.draw-border:focus {
+    border-color: cyan;
+    outline: cyan;
+}
+
+input.draw-border:hover+.input-group-text.border-span {
+    border-color: cyan !important;
+    transition: border-color 0.8s;
+}
+
+.input-group-text:hover {
+    border-color: cyan !important;
+    transition: border-color 0.8s;
+}
+
+.input-group-text:hover .fa-clock {
+    color: black !important;
+    transition: color 0.8s;
+}
+
+.div_Botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.icon .fa_icon {
+    transition: all 0.5s;
+    color: black;
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 100%;
+}
+
+.button {
+    font-family: inherit;
+    background: black;
+    color: white;
+    padding: 0.35em 0;
+    font-size: 17px;
+    border: none;
+    border-radius: 0.7em;
+    letter-spacing: 0.08em;
+    position: relative;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 45px;
+    padding-left: 2.8em;
+    padding-right: 0.9em;
+}
+
+
+.button .icon {
+    background: aliceblue;
+    height: 2em;
+    width: 2em;
+    border-radius: 2em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0.4em;
+    transition: all 0.5s;
+}
+
+.button:hover .icon .fa_icon {
+    transform: rotate(360deg);
+}
+
+.button:hover .icon {
+    width: calc(100% - 0.85rem);
+    border-radius: 0.5em;
+}
+
+@media (max-width: 600px) {
+    .div_Botones{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 75px;
+    }
+
+    .p_Botones1{
+        font-size: 60%;
+        position: absolute;
+        right: 8%;
+    }
+
+    .p_Botones2{
+        font-size: 60%;
+        position: absolute;
+        right: 6%;
+    }
+
+    .p_Botones3{
+        font-size: 60%;
+        position: absolute;
+        right: 17%;
+    }
+
+    
+}
